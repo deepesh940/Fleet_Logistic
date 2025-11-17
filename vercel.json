@@ -1,0 +1,11 @@
+cat > vercel.json <<'EOF'
+{
+  "version": 2,
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist"
+}
+EOF
+
+git add vercel.json
+git commit -m "Add vercel.json - set build command and outputDirectory"
+git push origin main
